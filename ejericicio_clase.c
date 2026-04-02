@@ -20,7 +20,7 @@ int main() {
         scanf("%d", &A[i]);
     }
  
-    // Imprimir los elementos del vector
+    
     for(i = 0; i < n; i++) {
         printf("%d\n", A[i]);
     }
