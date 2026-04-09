@@ -1,3 +1,7 @@
+//Libro: Introducciòn a programaciòn en c
+//pàgina 81
+//Trabajo en clases Matrices 09/04/2026
+
 #include <stdio.h>
 
 int main() {
