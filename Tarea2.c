@@ -26,7 +26,20 @@ int main(int argc, char const *argv[])
         }
     }
 
-    
+    //bloque 2: promedio de notas por estudiante
+
+    for (int i=0; i < 5; i++)
+    {
+        suma=0;
+
+        for(int j=0; j < 3; j++)
+        { 
+            suma= suma + notas [i][j];
+        }
+
+        promedio = suma/3.0;
+        printf("El promedio del estudiante %d es de %.2f\n ", i+1, promedio); 
+    }
 
 
     return 0;
