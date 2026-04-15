@@ -41,7 +41,26 @@ int main(int argc, char const *argv[])
         printf("El promedio del estudiante %d es de %.2f\n ", i+1, promedio); 
     }
 
+    //bloque 3: promedio asignaturas 
 
+    for (int j=0; j < 3; i++)
+    {
+        suma=0;
+
+        for(int i=0; i < 5; i++)
+        { 
+            suma= suma + notas [i][j];
+        }
+
+        promedio = suma/5.0;
+        printf("El promedio de la asignatura %d es de %.2f\n ", i+1, promedio); 
+    }
+
+
+
+
+
+    
     return 0;
 }
 
