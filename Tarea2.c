@@ -30,7 +30,9 @@ int main(int argc, char const *argv[])
         }
     }
 
-    printf("------Promedio Notas estudiante------");
+     printf("\n");
+    printf("------Promedio Notas estudiante------\n");
+   
     
     //bloque 2: promedio de notas por estudiante
 
@@ -47,7 +49,9 @@ int main(int argc, char const *argv[])
         printf("El promedio del estudiante %d es de %.2f\n ", i+1, promedio); 
     }
 
-    printf("------Promedio Asignaturas------");
+    printf("\n");
+    printf("------Promedio Asignaturas------\n");
+   
 
     //bloque 3: promedio asignaturas 
 
@@ -64,9 +68,9 @@ int main(int argc, char const *argv[])
         printf("El promedio de la asignatura %d es de %.2f\n ", j+1, promedio); 
     }
 
+    printf("\n");
+    printf("------Nota mas alta y baja por asignatura------\n");
     
-    printf("------Nota más alta y baja por asignatura------");
-
     //bloque 4: nota más alta y baja por asignatura
 
      for (int j=0; j < 3; j++)
@@ -91,8 +95,10 @@ int main(int argc, char const *argv[])
 
     }
 
+     printf("\n");
     
-    printf("------Nota más alta y baja por estudiante------");
+    printf("------Nota mas alta y baja por estudiante------\n");
+    
     
 
     //bloque 5:  nota más alta y baja por estudiante 
@@ -121,8 +127,9 @@ int main(int argc, char const *argv[])
 
     }
 
-
-    printf("------Aprobados y Reprobados por asignatura ------");
+  printf("\n");
+    printf("------Aprobados y Reprobados por asignatura ------\n");
+  
     
     //Bloque 6: aprobados y reprobados por asignatura
 
