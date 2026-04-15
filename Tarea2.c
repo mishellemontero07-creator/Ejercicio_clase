@@ -118,7 +118,11 @@ int main(int argc, char const *argv[])
         }
 
      printf("Estudiante %d: maxima = %d, minima = %d\n", i+1, max, min);
+
     }
+
+
+    printf("------Aprobados y Reprobados por asignatura ------");
     
     //Bloque 6: aprobados y reprobados por asignatura
 
