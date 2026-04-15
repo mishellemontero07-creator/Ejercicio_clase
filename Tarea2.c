@@ -5,6 +5,8 @@ int main(int argc, char const *argv[])
     int nota, suma;
     float promedio;
     int max, min;
+    int aprobados, reprobados;
+
 
     
 
@@ -28,6 +30,8 @@ int main(int argc, char const *argv[])
         }
     }
 
+    printf("------Promedio Notas estudiante------");
+    
     //bloque 2: promedio de notas por estudiante
 
     for (int i=0; i < 5; i++)
@@ -43,6 +47,8 @@ int main(int argc, char const *argv[])
         printf("El promedio del estudiante %d es de %.2f\n ", i+1, promedio); 
     }
 
+    printf("------Promedio Asignaturas------");
+
     //bloque 3: promedio asignaturas 
 
     for (int j=0; j < 3; j++)
@@ -57,6 +63,9 @@ int main(int argc, char const *argv[])
         promedio = suma/5.0;
         printf("El promedio de la asignatura %d es de %.2f\n ", j+1, promedio); 
     }
+
+    
+    printf("------Nota más alta y baja por asignatura------");
 
     //bloque 4: nota más alta y baja por asignatura
 
@@ -77,11 +86,14 @@ int main(int argc, char const *argv[])
         {
             min= notas [i][j];
         }
-        
-        printf("Asignatura %d: máxima = %d, mínima = %d\n", j+1, max, min);
+        }
+        printf("Asignatura %d: maxima = %d, minima = %d\n", j+1, max, min);
 
     }
 
+    
+    printf("------Nota más alta y baja por estudiante------");
+    
 
     //bloque 5:  nota más alta y baja por estudiante 
 
@@ -105,9 +117,31 @@ int main(int argc, char const *argv[])
             }
         }
 
-     printf("Estudiante %d: máxima = %d, mínima = %d\n", i+1, max, min);
+     printf("Estudiante %d: maxima = %d, minima = %d\n", i+1, max, min);
     }
     
+    //Bloque 6: aprobados y reprobados por asignatura
+
+    for (int j = 0; j < 3; j++)
+    {
+    aprobados = 0;
+    reprobados = 0;
+
+    for (int i = 0; i < 5; i++)
+    {
+        if (notas[i][j] >= 6)
+        {
+            aprobados++;
+        }
+        else
+        {
+            reprobados++;
+        }
+    }
+        printf("Asignatura %d: aprobados = %d, reprobados = %d\n", j+1, aprobados, reprobados);
+    }
+
     return 0;
 }
+
 
